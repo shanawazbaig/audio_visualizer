@@ -79,7 +79,8 @@ module i2s_receiver (
             end
             
             // Shift in data on BCLK rising edge
-            // I2S data is MSB first, transmitted on BCLK falling, sampled on rising
+            // I2S data is MSB first, valid after BCLK falling edge, sampled on rising edge
+            // This follows standard I2S timing where data is stable during rising edge
             else if (bclk_rising) begin
                 if (bit_count < 24) begin
                     shift_reg <= {shift_reg[22:0], adcdat_sync[2]};

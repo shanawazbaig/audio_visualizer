@@ -43,7 +43,8 @@ module pll_audio (
         end else begin
             // Divide 50 MHz by approximately 4 to get ~12.5 MHz (close to 12.288)
             // Actual ratio: 50 / 12.288 = 4.069
-            if (counter >= 6'd1) begin  // Toggle every 2 cycles
+            // Toggle every 2 cycles: 50MHz / 4 = 12.5 MHz
+            if (counter >= 6'd1) begin  // Count 0,1 then toggle (divide by 4 total)
                 counter <= 6'd0;
                 clk_out <= ~clk_out;
             end else begin

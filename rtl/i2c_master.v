@@ -111,7 +111,7 @@ module i2c_master (
                     sdat_oe <= 1;
                     state <= ADDR;
                     bit_count <= 0;
-                    // Load address + write bit
+                    // Load address + write bit (1'b0 = write operation)
                     shift_reg <= {WM8731_ADDR, 1'b0};
                 end
                 

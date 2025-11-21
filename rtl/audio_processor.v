@@ -23,8 +23,10 @@ module audio_processor (
     // Average two samples
     function [23:0] avg_samples;
         input [23:0] s1, s2;
+        reg [24:0] sum;
         begin
-            avg_samples = {1'b0, s1[23:1]} + {1'b0, s2[23:1]};
+            sum = {1'b0, s1} + {1'b0, s2};
+            avg_samples = sum[24:1];  // Divide by 2
         end
     endfunction
     
