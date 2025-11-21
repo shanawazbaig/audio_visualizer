@@ -1,0 +1,72 @@
+# Quartus II generated files
+*.bak
+*.done
+*.eqn
+*.hex
+*.html
+*.jdi
+*.jpg
+*.mif
+*.pin
+*.pof
+*.ptf.*
+*.qar
+*.qarlog
+*.qws
+*.rpt
+*.smsg
+*.sof
+*.sopc_builder
+*.summary
+*.tcl
+*.txt # Quartus reports
+*.vho
+*.vhd~
+*.qws
+
+# Quartus II project files
+db/
+incremental_db/
+output_files/
+simulation/
+timing/
+testbench/
+greybox_tmp/
+*.qpf.bak
+*.qsf.bak
+
+# ModelSim generated files
+*.mti
+*.dat
+*.dbs
+*.psm
+*.bak
+*.cmp
+*.jpg
+*.html
+*.bsf
+modelsim.ini
+work/
+transcript
+vsim.wlf
+wlf*
+
+# Platform Designer generated files
+*.sopcinfo
+*.csv
+*.cmp
+*.bsf
+*.spd
+
+# SignalTap files
+*.stp
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.tmp
+
+# OS generated files
+.DS_Store
+Thumbs.db

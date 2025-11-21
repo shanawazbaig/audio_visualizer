@@ -1,0 +1,8 @@
+# Quartus Project File
+# Audio Visualizer for DE10-Standard Board
+
+QUARTUS_VERSION = "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+DATE = "04:42:00  November 21, 2025"
+
+# Revisions
+PROJECT_REVISION = "audio_visualizer"
